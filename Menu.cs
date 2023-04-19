@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace Examen
 {
-    internal interface IntShowData
+    class Menu
     {
-        string ShowData();
-        string GetDetails();
     }
 }
