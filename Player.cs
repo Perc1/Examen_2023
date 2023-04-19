@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Examen
 {
-    class Player : IshowData
+    class Player : IntShowData
     {
         string name;
         List<Items> items = new List<Items>();
@@ -14,20 +14,24 @@ namespace Examen
         int level;
         float money;
 
+        public void GettingItem(Items item)
+        {
+            items.Add(item);
+        }
 
-        public virtual string GetName(string name)
+        public virtual string GettingName(string name)
         {
             this.name = name;
             return name;
         }
 
-        public virtual float GetExperience(float experience)
+        public virtual float GettingExperience(float experience)
         {
             this.experience = experience;
             return experience;
         }
 
-        public virtual float GetLevel(int level)
+        public virtual float GettingLevel(int level)
         {
             this.level = level;
             return level;
@@ -37,9 +41,8 @@ namespace Examen
         {
             return "Nombre: " + name + " " + "Experiencia: " + experience + " " + "Nivel: " + level;
         }
-        public void GetItem(Items item)
-        {
-            items.Add(item);
-        }
+
     }
+
 }
+

@@ -9,8 +9,9 @@ namespace Examen
     class Items
     {
         public string name;
-        public string itemtype;
         float price;
+        public string itemtype;
+        
 
         public Items(string name, string itemtype, float price)
         {
@@ -19,13 +20,5 @@ namespace Examen
             this.price = price;
         }
 
-        public virtual void Datos()
-        {
-            Console.WriteLine("Item Name: " + name);
-            Console.WriteLine("Item Type: " + itemtype);
-            Console.WriteLine("Item Price: " + price);
-        }
-
-   
     }
 }
