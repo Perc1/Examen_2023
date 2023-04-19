@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Examen
 {
-    class Player : IshowData
+    class Enemigo : IshowData
     {
         string name;
         List<Items> items = new List<Items>();
